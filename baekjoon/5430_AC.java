@@ -28,6 +28,7 @@ public class B_5430_AC {
 			for (int j = 0; j < order.length(); j++) {
 				if (d.size() == 0 && order.charAt(j) == 'D') { // 아래에 놓으면 안되고 무조건 위에 놓아야 함. -> 아래에 놓으면 연산 후 0이 되면 error를
 																// 출력하는 이슈 발생
+					// 또한 d의 사이즈가 0이어도 R의 명령어일 경우 처리가 가능하므로 error가 아니다!! ***
 					sb.append("error\n");
 					isError = true;
 					break;
